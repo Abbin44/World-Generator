@@ -36,18 +36,20 @@ namespace World_Generator
             {
                 for (int x = 0; x < width; x++)
                 {
-                    Console.Write("█");
                     if(map[y, x] == '\0')
                     {
                         Console.ForegroundColor = ConsoleColor.Blue;
+                        Console.Write("~");
                     }
                     else if(map[y, x] == '\u0001')
                     {
                         Console.ForegroundColor = ConsoleColor.DarkGreen;
+                        Console.Write("f");
                     }
                     else if(map[y, x] == '\u0002')
                     {
                         Console.ForegroundColor = ConsoleColor.DarkYellow;
+                        Console.Write("˄");
                     }
                 }
                 Console.Write("\n");
